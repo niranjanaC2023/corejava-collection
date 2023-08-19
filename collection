@@ -1,0 +1,111 @@
+//In JDK 1.0v , java people provide some classes and interfaces to store the data/objects.
+//classes are: Vector, HashTable, Properties, Dictionary
+
+Collection:2 type
+1.Type Safe : ArrayList<String> list = new ArrayList<>();
+2.Un-Type safe: ArrayList list = new ArrayList();
+
+
+*****Difference between Vector and ArrayList*********
+VECTOR:
+=======
+->Vector introduced in jdk 1.0 version
+->Vector is legacy class.
+->Vector is present in java.util package.
+->Vector are synchronized collection.
+->So vector is thread safe(At a time only one thread access the object. In that time that thread kept as lock(Locking system) until un-lock new thread can't access)
+->So that vector class performance is low.
+->Vector doesn't provide guaranty for data consistency because At a time multiple thread can access the object.
+->Vector By default capacity is 10
+->Vector New capacity is (oldCapacity*2)
+->Vector has default method to find capacity of vector i.e capacity() method 
+->Vector can store the data in insertion order but does not follow sorting order.
+->When Collection Framework introduced in 1.2v, they didnot remove Vector class they re-modify the class and adjust in Collection Framework.
+so that Vector class is called Legacy class becoz modified class ...less use
+After added, Vector class is implemented class of List<I> which is present in java.util package.
+->Vector class size is "growable Array" or "resizeable array".
+->Vector can store the data as index-based.
+->Vector allow to store both homogeneous and heterogeneous element.
+->Vector can store duplicate values.
+->Vector can store multiple null value.
+->Vector can store the data in insertion order but does not follow sorting order.
+
+STACK:
+======
+->Stack introduced in jdk 1.0 version
+->Stack is legacy class.
+->Stack is a child class of Vector.
+->Stack is present in java.util package.
+->Stack class was designed on the basic of LIFO by default.
+->Stack By default capacity is 10
+->Stack New capacity is (oldCapacity*2)
+->Stack has default method to find capacity of Stack i.e capacity() method
+->Using push() method we can insert data into stack
+->using pop() method we can retrieve element and also remove the same element from stack based on  LIFO concept
+->peek() can retrieve element which is top most in stack, it never delete/remove element from stack;
+->search() used for fetch the data from stack based its position which start from 1 , if element not present then return -1
+->In Stack, index starts from bottom.
+
+************ARRAYLIST:*********
+->ArrayList introduced in jdk 1.2 version
+->ArrayList is Not-legacy class.
+->ArrayList is an implemented class of List<I>
+->ArrayList are Non-synchronized collection.
+->ArrayList is present in java.util package.
+->So ArrayList is non-thread safe(At a time multiple thread can access the object. In ArrayList Locking system not there.
+->So that vector class performance is high.
+->ArrayList does not provide guaranty for data consistency because At a time multiple thread can access the object.
+(Data consistency means data might be loss, data udhor-idhor)
+->ArrayList can store the data as index-based.
+->ArrayList By default capacity is 10.
+->ArrayList New capacity is (oldCapacity*3)/2 + 1
+->ArrayList has no default method to find capacity of ArrayList.
+->In ArrayList data insertion and data fetch both are same direction in which way they inserted.
+->ArrayList store homogenous, heterogenous,duplicate,unique value.
+->ArrayList store multiple null value.
+->ArrayList follow insertion order, not sorting order
+
+**********LINKEDLIST:***********
+->LinkedList introduced in jdk 1.2 version
+->LinkedList is an implemented class of List<I>, Dequeue<I>
+->The underline data structure of LinkedList is "doubly LinkedList or Circular Linked List"
+->LinkedList can store the data as index-based.
+->LinkedList store homogenous, heterogenous,duplicate,unique value.
+->LinkedList store multiple null value.
+->LinkedList follow insertion order,not sorting order
+->LinkedList are Non-synchronized collection. 
+
+advantages of LinkedList::-
+-----------------------------
+->Insertion and deletion operations are fast in LinkedList, compare to ArrayList.Because in ArrayList index are shifted to forward so taking more time to shift.
+But in LinkedList create a new node and point the previous and next address into the node , here no shifting.so performance high.
+->we can traverse(access) the list in both forward and backward direction.
+
+Disadvantages of LinkedList::-
+---------------------------------
+->it occupy extra space for previous node address.
+->In case of insertion or deletion of element, we have to manage the previous node and next node.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
