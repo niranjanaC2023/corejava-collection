@@ -64,16 +64,19 @@ STACK:
 ->ArrayList store homogenous, heterogenous,duplicate,unique value.
 ->ArrayList store multiple null value.
 ->ArrayList follow insertion order, not sorting order
+->The underline data structure of ArrayList is "growable array or resizeable array"
 
 **********LINKEDLIST:***********
 ->LinkedList introduced in jdk 1.2 version
 ->LinkedList is an implemented class of List<I>, Dequeue<I>
-->The underline data structure of LinkedList is "doubly LinkedList or Circular Linked List"
+->The underline data structure of LinkedList is "doubly LinkedList or Circular Linked List"(Double LinkedList concept introduced in jdk 1.5, before 
+that single LinkedList used)
 ->LinkedList can store the data as index-based.
 ->LinkedList store homogenous, heterogenous,duplicate,unique value.
 ->LinkedList store multiple null value.
 ->LinkedList follow insertion order,not sorting order
 ->LinkedList are Non-synchronized collection. 
+->LinkedList default capacity is 0 . Capacity will increase during its run-time.
 
 advantages of LinkedList::-
 -----------------------------
@@ -86,7 +89,18 @@ Disadvantages of LinkedList::-
 ->it occupy extra space for previous node address.
 ->In case of insertion or deletion of element, we have to manage the previous node and next node.
  
+**********Difference between ArrayList and LinkedList********
+ArrayList:
+----------
+->The underline data structure of ArrayList is "growable array or resizeable array"
+->ArrayList is good for retrieval operation becoz of index based
+->ArrayList is worst for insertion or deletion operation becoz of index based
 
+LinkedList:
+-----------
+->The underline data structure of LinkedList is "doubly LinkedList or Circular Linked List"
+->LinkedList is good for insertion or deletion operation becoz of node operation.
+->LinkedList is worst for retrieval operation becoz of node operation.
 
 
 
