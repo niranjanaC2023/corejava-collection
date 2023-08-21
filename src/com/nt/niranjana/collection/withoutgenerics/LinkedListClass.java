@@ -8,7 +8,7 @@ public class LinkedListClass
 	public static void  main(String[] args) 
 	{
 		
-		//***************LinkedList class with default Constructor which is having default capacity i.e 10******************
+		//***************LinkedList class with default Constructor******************
 		LinkedList linkedList = new LinkedList();		
 		//insert data into LinkedList
 		linkedList.add("raja");
@@ -45,8 +45,17 @@ public class LinkedListClass
 		}
 		System.out.println();
 		
-		//retrieve data from LinkedList using ListIterator
-		ListIterator listIterator = linkedList.listIterator();
+		//retrieve data from LinkedList using iterator
+		ListIterator iterator = linkedList.listIterator();
+		System.out.println("Iterator: "+iterator);
+		while(iterator.hasNext())
+		{
+			System.out.println(iterator.next());
+		}
+		System.out.println();
+		
+		//retrieve data from LinkedList using ListIterator 
+		ListIterator listIterator = linkedList.listIterator(1);
 		System.out.println("listIterator: "+listIterator);
 		while(listIterator.hasNext())
 		{
@@ -54,7 +63,7 @@ public class LinkedListClass
 		}
 		System.out.println();
 		
-		//retrieve data from LinkedList using ListIterator
+		//retrieve data from LinkedList using ListIterator With Index
 		ListIterator listIteratorWithIndex = linkedList.listIterator(1);
 		System.out.println("listIteratorWithIndex: "+listIteratorWithIndex);
 		while(listIteratorWithIndex.hasNext())

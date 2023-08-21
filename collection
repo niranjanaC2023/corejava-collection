@@ -103,12 +103,43 @@ LinkedList:
 ->LinkedList is worst for retrieval operation becoz of node operation.
 
 
+****HashSet*****
+->Duplicate not allowed, if insert then it will replaced.
+->not index based, it has hashCode based.
+->not allow inserting order
+->not using ListIterator for retrieve , only using iterator()
+
+****LinkedHashSet*****
+->Duplicate not allowed, if insert then it will replaced.
+->not index based, but allow inserting order
+->not using ListIterator for retrieve , only using iterator()
+
+*******TreeSet*******
+->TreeSet follows sorting order.(ascending,descending order)
+->not an index based, follow sorting order
+->it can store only homogenous element so that it can compare one element to other element. Using Heterogenous can't be compare
+->it can't store duplicate element.
+->Non-synchronized data structure.
 
 
 
+****Difference between Iterator and ListIterator********
+Iterator
+---------
+->we can get Iterator cursor by using iterator() method;
+Ex:Iterator itr = l.iterator();
+->Iterator cursor can be used with any collection object.
+->Iterator methods are : hasNext(), next(), remove()
+->By using Iterator cursor, we can retrieve the elements only in forward direction. 
+->By using Iterator cursor, we can read & retrieve elements.
 
-
-
+ListIterator:
+----------------
+->We can get ListIterator cursor by using listIterator() method.
+->ListIterator cursor can be used only with List implemented classes i.e ArrayList, LinkedList, Vector, stack.
+->ListIterator methods are: hasNext(), next(), hasPrevious(), previous(), remove(), set()
+->By using ListIterator cursor we can retrieve the elements in forwards & backward direction.
+->By using ListIterator cursor we can read, remove,replace & add the elements.
 
 
 
